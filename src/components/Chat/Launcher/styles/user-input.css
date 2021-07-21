@@ -12,6 +12,7 @@
 
 
 .sc-user-input--text {
+  text-align: left;
   width: 300px;
   resize: none;
   border: none;

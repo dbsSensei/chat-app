@@ -1,20 +1,23 @@
 .sc-header {
-  background: #f39314;
-  min-height: 75px;
-  border-top-left-radius: 9px;
+  background: white;
+  min-height: 59px;
+  /* border-top-left-radius: 9px; */
   border-top-right-radius: 9px;
-  color: white;
+  color: black;
   padding: 10px;
-  box-shadow: 0 1px 4px rgba(0,0,0,.2);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   position: relative;
   box-sizing: border-box;
   display: flex;
 }
 
 .sc-header--img {
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  align-self: center;
-  padding: 10px;
+  border: 0.5px solid #bdbdbd;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 .sc-header--team-name {
@@ -23,6 +26,17 @@
   flex: 1;
   user-select: none;
   border-radius: 5px;
+
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+
+  /* Black - 100 */
+
+  color: #282828;
+  text-align: left;
 }
 
 .sc-header--close-button {
@@ -36,7 +50,7 @@
 }
 
 .sc-header--close-button:hover {
-  background: #ed8701;
+  /* background: #ed8701; */
 }
 
 .sc-header--close-button img {
@@ -46,7 +60,25 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 450px) {
+.sc-chat-list {
+  height: 48px;
+}
+
+.sc-header-list h3 {
+  color: black;
+  padding-left: 15px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media (max-width: 732px) {
   .sc-header {
     border-radius: 0px;
   }

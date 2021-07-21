@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import ChatWindow from './chatComponents/ChatWindow';
 import launcherIcon from '../../../assets/Chat/logo-no-bg.svg';
-import launcherIconActive from '../../../assets/Chat/close-icon.png';
+import launcherIconActive from '../../../assets/Chat/close-icon.svg';
 import incomingMessageSound from '../../../assets/Chat/sounds/notification.mp3';
 import './styles';
 
@@ -88,6 +88,7 @@ function Launcher(props) {
       </div>
 
       <ChatWindow
+        socket={props.socket}
         messageList={messageList}
         onUserInputSubmit={onMessageWasSent}
         onFilesSelected={onFilesSelected}
